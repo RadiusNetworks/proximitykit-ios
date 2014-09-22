@@ -4,7 +4,11 @@
 #import "PKMap.h"
 #import "PKRegion.h"
 #import "PKIBeacon.h"
+#import "PKIBeaconRegion.h"
 
+/*!
+ * @interface PKKit
+ */
 @interface PKKit : NSObject
 
 @property NSString *url;
@@ -16,7 +20,10 @@
 
 - (id)initWith:(NSDictionary *)dict;
 - (PKRegion *)getRegionForIdentifier:(NSString *)identifier;
-- (PKIBeacon *)getIBeaconForCLBeacon: (CLBeacon *)clBeacon;
+- (PKIBeacon *)getIBeaconForCLBeacon:(CLBeacon *)clBeacon;
+- (PKIBeaconRegion *)getIBeaconRegionForCLBeaconRegion:(CLBeaconRegion *)clBeaconRegion;
+
+
 - (void)enumerateIBeaconsUsingBlock:(void (^)(PKIBeacon *iBeacon, NSUInteger idx, BOOL *stop))block;
 
 

@@ -4,6 +4,9 @@
 #import <CoreLocation/CoreLocation.h>
 #import "PKRegion.h"
 
+/*!
+ * @interface PKIBeacon
+ */
 @interface PKIBeacon : PKRegion
 
 @property (readonly) NSUUID *uuid;
@@ -12,8 +15,8 @@
 @property (readonly) NSInteger rssi;
 @property (readonly) CLLocationAccuracy accuracy;
 @property (readonly) CLProximity proximity;
-@property (readonly) CLBeacon *clBeacon;
+@property (readonly) CLBeacon *beacon;
 
 - (id)initWith:(NSDictionary *)dict;
-- (id)initWithBeacon:(CLBeacon *)beacon attributes:(NSDictionary *) attrs;
+- (id)initWithBeacon:(CLBeacon *)beacon dict:(NSDictionary *)dict;
 @end
