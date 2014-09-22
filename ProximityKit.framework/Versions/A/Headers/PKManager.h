@@ -5,6 +5,7 @@
 #import <UIKit/UIKit.h>
 #import "PKManagerDelegate.h"
 #import "PKRegion.h"
+#import "PKKit.h"
 
 /*
  * Type PKFetchCompletionHandler
@@ -127,6 +128,16 @@ typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  *
  */
 @property (assign) id <CLLocationManagerDelegate> locationManagerDelegate;
+
+/*
+ *  kit
+ *
+ *  Discussion:
+ *      The representation of the Kit as defined in the Proximity Kit service.
+ *      This contains lists of iBeacons and Geofences.
+ *
+ */
+@property (readonly) PKKit *kit;
 
 /*
  * getRegionForIdentifier
