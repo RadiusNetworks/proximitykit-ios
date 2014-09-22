@@ -12,6 +12,8 @@
 @property (readonly) NSUUID *uuid;
 @property (readonly) NSInteger major;
 @property (readonly) NSInteger minor;
+@property (readonly) BOOL hasMajor;
+@property (readonly) BOOL hasMinor;
 
 - (id)initWith:(NSDictionary *)dict;
 - (id)initWithRegion:(CLBeaconRegion *)region dict:(NSDictionary *)dict;

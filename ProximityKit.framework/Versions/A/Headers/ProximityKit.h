@@ -5,4 +5,4 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ProximityKit/PKManager.h>
+#import <ProximityKit/RPKManager.h>

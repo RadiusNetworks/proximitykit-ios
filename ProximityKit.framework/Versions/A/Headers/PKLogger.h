@@ -7,30 +7,30 @@
 
 #import <Foundation/Foundation.h>
 
-#define PKLog(s,...) \
-	[PKLogger log:__LEVEL__ format:(s),##__VA_ARGS__]
-#define PKLogEmerg(s,...) \
-	[PKLogger log:PKLogLevelEmergency format:(s),##__VA_ARGS__]
-#define PKLogAlert(s,...) \
-	[PKLogger log:PKLogLevelAlert format:(s),##__VA_ARGS__]
-#define PKLogCrit(s,...) \
-	[PKLogger log:PKLogLevelCritical format:(s),##__VA_ARGS__]
-#define PKLogError(s,...) \
-	[PKLogger log:PKLogLevelError format:(s),##__VA_ARGS__]
-#define PKLogWarn(s,...) \
-	[PKLogger log:PKLogLevelWarning format:(s),##__VA_ARGS__]
-#define PKLogNotice(s,...) \
-	[PKLogger log:PKLogLevelNotice format:(s),##__VA_ARGS__]
-#define PKLogInfo(s,...) \
-	[PKLogger log:PKLogLevelInformational format:(s),##__VA_ARGS__]
-#define PKLogDebug(s,...) \
-	[PKLogger log:PKLogLevelDebug format:(s),##__VA_ARGS__]
+#define PKLog(s, ...) \
+    [PKLogger log : __LEVEL__ format : (s), ## __VA_ARGS__]
+#define PKLogEmerg(s, ...) \
+    [PKLogger log : PKLogLevelEmergency format : (s), ## __VA_ARGS__]
+#define PKLogAlert(s, ...) \
+    [PKLogger log : PKLogLevelAlert format : (s), ## __VA_ARGS__]
+#define PKLogCrit(s, ...) \
+    [PKLogger log : PKLogLevelCritical format : (s), ## __VA_ARGS__]
+#define PKLogError(s, ...) \
+    [PKLogger log : PKLogLevelError format : (s), ## __VA_ARGS__]
+#define PKLogWarn(s, ...) \
+    [PKLogger log : PKLogLevelWarning format : (s), ## __VA_ARGS__]
+#define PKLogNotice(s, ...) \
+    [PKLogger log : PKLogLevelNotice format : (s), ## __VA_ARGS__]
+#define PKLogInfo(s, ...) \
+    [PKLogger log : PKLogLevelInformational format : (s), ## __VA_ARGS__]
+#define PKLogDebug(s, ...) \
+    [PKLogger log : PKLogLevelDebug format : (s), ## __VA_ARGS__]
 
 /** PKLogLevel
 
-The enumerated values for the different log levels. Based on syslog.
+   The enumerated values for the different log levels. Based on syslog.
 
-*/
+ */
 typedef NS_ENUM (NSInteger, PKLogLevel)
 {
     /** Emergency: System is unusable */
@@ -81,13 +81,13 @@ typedef NS_ENUM (NSInteger, PKLogLevel)
  * `format` An NSLog-like formatted message
  *
  */
-+ (void) log:(PKLogLevel)level format:(NSString *) format, ...;
++ (void)log:(PKLogLevel)level format:(NSString *)format, ...;
 
 /** setLevel:
  *
  * Sets the global log level for proximity kit.
  *
  */
-+ (void) setLevel:(PKLogLevel)level;
++ (void)setLevel:(PKLogLevel)level;
 
 @end

@@ -14,6 +14,30 @@
  */
 typedef void (^PKFetchCompletionHandler)(UIBackgroundFetchResult);
 
+/** PKManagerNotificationEvent
+ *
+ * Enumeration of different event types that can trigger notification from PKManager.
+ */
+typedef NS_ENUM (NSInteger, PKManagerNotificationEvent) {
+    PKManagerNotificationEventDidSync,
+    PKManagerNotificationEventDidDetermineStateForRegion,
+    PKManagerNotificationEventDidEnterRegion,
+    PKManagerNotificationEventDidExitRegion,
+    PKManagerNotificationEventDidRangeBeaconsInRegion,
+    PKManagerNotificationEventDidFailWithError
+};
+
+// Notifications.
+FOUNDATION_EXPORT NSString *const PKManagerDidDetermineStateForRegionNotification;
+FOUNDATION_EXPORT NSString *const PKManagerDidEnterRegionNotification;
+FOUNDATION_EXPORT NSString *const PKManagerDidExitRegionNotification;
+FOUNDATION_EXPORT NSString *const PKManagerDidRangeBeaconsInRegionNotification;
+
+// Notification user data keys.
+FOUNDATION_EXPORT NSString *const PKManagerNotificationEventKey;
+FOUNDATION_EXPORT NSString *const PKManagerNotificationRegionKey;
+FOUNDATION_EXPORT NSString *const PKManagerNotificationRegionStateKey;
+FOUNDATION_EXPORT NSString *const PKManagerNotificationBeaconsKey;
 
 /** PKManager
  *
@@ -58,7 +82,7 @@ typedef void (^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  * 7 - Debug: Debug-level messages
  * </pre>
  */
--(void)logLevel:(NSInteger)level;
+- (void)logLevel:(NSInteger)level;
 
 
 /** start
@@ -179,5 +203,14 @@ typedef void (^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  *
  */
 - (void)stopRangingIBeacons;
+
+/** setPartnerIdentifier
+ *
+ * Sets the partner identifer string for analytics.
+ *
+ * Limited to 255 characters.
+ *
+ */
+- (void)setPartnerIdentifier:(NSString *)identifier;
 
 @end
