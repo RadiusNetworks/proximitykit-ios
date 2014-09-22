@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, PKRegionState) {
  *  proximityKit:didEnter:
  *
  *  Discussion:
- *    Invoked when new entering new region. Regions can be Geofence or iBeacons.
+ *    Invoked when new entering new region. Regions can be Geofences or iBeacons.
  *
  */
 - (void)proximityKit:(PKManager *)manager
@@ -53,7 +53,7 @@ typedef NS_ENUM(NSInteger, PKRegionState) {
  *  proximityKit:didEnter:
  *
  *  Discussion:
- *    Invoked when new entering new region. Regions can be Geofence or iBeacons.
+ *    Invoked when new entering new region. Regions can be Geofences or iBeacons.
  *
  */
 - (void)proximityKit:(PKManager *)manager
