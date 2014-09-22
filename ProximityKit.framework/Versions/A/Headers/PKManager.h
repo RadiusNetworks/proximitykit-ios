@@ -58,7 +58,11 @@ typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  *  stop
  *
  *  Discussion:
- *      Unregister regions and beacons and stop syncing.
+ *      Unregister regions and beacons and stop automatic syncing.
+ *
+ *      While the PKManager is stopped if `sync` is called the api will be called
+ *      and data downloaded and synced. However, any regions will not be
+ *      registered with CoreLocation.
  *
  */
 - (void)stop;
@@ -168,22 +172,5 @@ typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  */
 - (void)startRangingIBeacons;
 
-/*
- * resumeMonitoringAndRanging
- *
- *  Discussion:
- *      Resume Region Monitoring and Beacon Ranging
- *
- */
-- (void) resumeMonitoringAndRanging;
-
-/*
- * suspendMonitoringAndRanging
- *
- *  Discussion:
- *      Suspend Region Monitoring and Beacon Ranging
- *
- */
-- (void) suspendMonitoringAndRanging;
 
 @end

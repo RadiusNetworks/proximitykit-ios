@@ -50,10 +50,10 @@ typedef NS_ENUM(NSInteger, PKRegionState) {
             didEnter:(PKRegion *)region;
 
 /*
- *  proximityKit:didEnter:
+ *  proximityKit:didExit:
  *
  *  Discussion:
- *    Invoked when new entering new region. Regions can be Geofences or iBeacons.
+ *    Invoked when new leaving a region. Regions can be Geofences or iBeacons.
  *
  */
 - (void)proximityKit:(PKManager *)manager
