@@ -2,8 +2,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <UIKit/UIKit.h>
 #import "PKManagerDelegate.h"
 #import "PKRegion.h"
+
+/*
+ * Type PKFetchCompletionHandler
+ *
+ * Same signature as UIKit's performFetchWithCompletionHandler's block
+ */
+typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
+
 
 /*
  *  Class PKManager
@@ -18,10 +27,20 @@
 @interface PKManager : NSObject <CLLocationManagerDelegate>
 
 /*
+ *  getVersion
+ *
+ *  Discussion:
+ *      Get the version string for the Proximity Kit Framework
+ *
+ */
++ (NSString *)getVersion;
+
+/*
  *  managerWithDelegate
  *
  *  Discussion:
  *      Creates the manager, assignes the delegate.
+ *
  */
 + (PKManager *)managerWithDelegate:(id <PKManagerDelegate>)delegate;
 
@@ -30,7 +49,7 @@
  *
  *  Discussion:
  *      Sets up the manager and syncs data with the server.
-  *
+ *
  */
 - (void)start;
 
@@ -43,6 +62,39 @@
  */
 - (void)sync;
 
+/*
+ *  syncWithCompletionHandler
+ *
+ *  Discussion:
+ *      Same as `-sync`, but accepts a block for the sync callbacks. This is
+ *      particularly useful for updating the ProximityKit data when the
+ *      application in in the background.
+ *
+ *      To take advantage of this you need to implement
+ *      `application:performFetchWithCompletionHandler:` on your in your
+ *      application delegate. Then Within that method you can simply call
+ *      `syncWithCompletionHandler` and pass it the compleation block:
+ *
+ *       - (void) application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+ *       {
+ *           // ...
+ *           [pkManager syncWithCompletionHandler: completionHandler];
+ *       }
+ *
+ *     Be sure to set the fetch interval in your didFinishLaunching method:
+ *
+ *       - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ *       {
+ *           // ...
+ *           [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+ *           return YES;
+ *       }
+ *
+ *    Finally make sure you add `UIBackgroundModes` to your info plist with a string set to 'fetch'
+ *
+ *
+ */
+- (void)syncWithCompletionHandler:(void(^)(UIBackgroundFetchResult))completionHandler;
 
 /*
  *  delegate
