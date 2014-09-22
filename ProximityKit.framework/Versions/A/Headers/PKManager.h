@@ -34,6 +34,15 @@
  */
 - (void)start;
 
+/*
+ *  sync
+ *
+ *  Discussion:
+ *      Force a sync with the server. This is not normally required.
+ *
+ */
+- (void)sync;
+
 
 /*
  *  delegate
