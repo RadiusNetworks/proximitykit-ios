@@ -23,7 +23,7 @@ the beacon.
 
 ## Install
 
-See the [getting started guide](https://proximitykit.radiusnetworks.com/docs/iOS/getting-started)
+See the [getting started guide](https://proximitykit.radiusnetworks.com/docs/ios/getting-started)
 for details.
 
 ## Issues
@@ -32,10 +32,10 @@ For general service questions and help consult the Radius Networks [support
 knowledge base](https://radiusnetworks.zendesk.com/).
 
 If you've found a problem in this library, perform a search under
-[Issues](https://github.com/RadiusNetworks/proximitykit-iOS/issues?q=is%3Aissue+)
+[Issues](https://github.com/RadiusNetworks/proximitykit-ios/issues?q=is%3Aissue+)
 in case it has already been reported. If you do not find any issue addressing
 it, feel free to [open a new
-one](https://github.com/RadiusNetworks/proximitykit-iOS/issues/new).
+one](https://github.com/RadiusNetworks/proximitykit-ios/issues/new).
 
 Your issue report should contain a title and a clear description of the issue
 at a minimum. Please provide as much relevant information as possible to
