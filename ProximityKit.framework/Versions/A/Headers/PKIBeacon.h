@@ -10,6 +10,8 @@
 @property (readonly) NSInteger major;
 @property (readonly) NSInteger minor;
 @property (readonly) NSInteger rssi;
+@property (readonly) CLLocationAccuracy accuracy;
+@property (readonly) CLProximity proximity;
 @property (readonly) CLBeacon *clBeacon;
 
 - (id)initWith:(NSDictionary *)dict;
