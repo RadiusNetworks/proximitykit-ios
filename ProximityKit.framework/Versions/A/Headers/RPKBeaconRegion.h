@@ -10,8 +10,8 @@
 @interface RPKBeaconRegion : RPKRegion
 
 @property (readonly) NSUUID *uuid;
-@property (readonly) NSInteger major;
-@property (readonly) NSInteger minor;
+@property (readonly) NSNumber *major;
+@property (readonly) NSNumber *minor;
 @property (readonly) BOOL hasMajor;
 @property (readonly) BOOL hasMinor;
 

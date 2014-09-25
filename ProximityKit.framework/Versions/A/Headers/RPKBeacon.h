@@ -10,9 +10,9 @@
 @interface RPKBeacon : RPKRegion
 
 @property (readonly) NSUUID *uuid;
-@property (readonly) NSInteger major;
-@property (readonly) NSInteger minor;
-@property (readonly) NSInteger rssi;
+@property (readonly) NSNumber *major;
+@property (readonly) NSNumber *minor;
+@property (readonly) NSNumber *rssi;
 @property (readonly) CLLocationAccuracy accuracy;
 @property (readonly) CLProximity proximity;
 @property (readonly) CLBeacon *beacon;

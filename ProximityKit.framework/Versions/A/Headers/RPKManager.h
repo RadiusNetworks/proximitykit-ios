@@ -33,12 +33,16 @@ FOUNDATION_EXPORT NSString *const RPKManagerDidDetermineStateForRegionNotificati
 FOUNDATION_EXPORT NSString *const RPKManagerDidEnterRegionNotification;
 FOUNDATION_EXPORT NSString *const RPKManagerDidExitRegionNotification;
 FOUNDATION_EXPORT NSString *const RPKManagerDidRangeBeaconsInRegionNotification;
+FOUNDATION_EXPORT NSString *const RPKManagerDidTriggerAnalyticsEvent;
 
 // Notification user data keys.
 FOUNDATION_EXPORT NSString *const RPKManagerNotificationEventKey;
 FOUNDATION_EXPORT NSString *const RPKManagerNotificationRegionKey;
 FOUNDATION_EXPORT NSString *const RPKManagerNotificationRegionStateKey;
 FOUNDATION_EXPORT NSString *const RPKManagerNotificationBeaconsKey;
+FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventDetailsKey;
+FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventTypeKey;
+
 
 /** RPKManager
  *
@@ -56,6 +60,13 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationBeaconsKey;
  */
 + (NSString *)getVersion;
 
+/** manager
+ *
+ * Creates the manager without a delegate.
+ *
+ */
++ (RPKManager *)manager;
+
 /** managerWithDelegate
  *
  * Creates the manager, assignes the delegate.
@@ -71,6 +82,15 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationBeaconsKey;
  *
  */
 + (RPKManager *)managerWithDelegate:(id <RPKManagerDelegate> )delegate andConfig:(NSDictionary*)config;
+
+/** managerWithConfig
+ *
+ * Creates the manager without a delegate and uses the supplied
+ * configuration dictionary instead of loading the configuration from
+ * the plist file.
+ *
+ */
++ (RPKManager *)managerWithConfig:(NSDictionary*)config;
 
 /** logLevel
  * Set the logging level. Follows syslog convention of levels 0-7.
