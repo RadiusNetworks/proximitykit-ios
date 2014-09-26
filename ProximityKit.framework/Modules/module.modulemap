@@ -1,0 +1,6 @@
+framework module ProximityKit {
+  umbrella header "ProximityKit.h"
+
+  export *
+  module * { export * }
+}
