@@ -20,12 +20,12 @@ typedef void (^RPKFetchCompletionHandler)(UIBackgroundFetchResult);
  * Enumeration of different event types that can trigger notification from RPKManager.
  */
 typedef NS_ENUM (NSInteger, RPKManagerNotificationEvent) {
-    RPKManagerNotificationEventDidSync,
-    RPKManagerNotificationEventDidDetermineStateForRegion,
-    RPKManagerNotificationEventDidEnterRegion,
-    RPKManagerNotificationEventDidExitRegion,
-    RPKManagerNotificationEventDidRangeBeaconsInRegion,
-    RPKManagerNotificationEventDidFailWithError
+  RPKManagerNotificationEventDidSync,
+  RPKManagerNotificationEventDidDetermineStateForRegion,
+  RPKManagerNotificationEventDidEnterRegion,
+  RPKManagerNotificationEventDidExitRegion,
+  RPKManagerNotificationEventDidRangeBeaconsInRegion,
+  RPKManagerNotificationEventDidFailWithError
 };
 
 // Notifications.
@@ -81,7 +81,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventTypeKey;
  * the plist file.
  *
  */
-+ (RPKManager *)managerWithDelegate:(id <RPKManagerDelegate> )delegate andConfig:(NSDictionary*)config;
++ (RPKManager *)managerWithDelegate:(id <RPKManagerDelegate> )delegate andConfig:(NSDictionary *)config;
 
 /** managerWithConfig
  *
@@ -90,7 +90,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventTypeKey;
  * the plist file.
  *
  */
-+ (RPKManager *)managerWithConfig:(NSDictionary*)config;
++ (RPKManager *)managerWithConfig:(NSDictionary *)config;
 
 /** logLevel
  * Set the logging level. Follows syslog convention of levels 0-7.

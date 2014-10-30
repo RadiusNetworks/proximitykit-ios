@@ -3,10 +3,10 @@
 #import <Foundation/Foundation.h>
 
 @interface RPKRegion : NSObject {
-    @protected
-    NSString *_name;
-    NSString *_identifier;
-    NSDictionary *_attributes;
+  @protected
+  NSString *_name;
+  NSString *_identifier;
+  NSDictionary *_attributes;
 }
 
 @property (readonly) NSString *name;

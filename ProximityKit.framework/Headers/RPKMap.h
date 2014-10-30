@@ -3,7 +3,7 @@
 #import <Foundation/Foundation.h>
 
 @interface RPKMap : NSObject {
-    NSMutableArray *_overlays;
+  NSMutableArray *_overlays;
 }
 
 - (NSArray *)overlays;
