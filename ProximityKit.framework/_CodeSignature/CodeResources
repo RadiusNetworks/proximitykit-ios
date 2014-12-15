@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/ProximityKit.h</key>
 		<data>
-		gbBMXPYp1KIVEVTxtQmYi+66U6Q=
+		s482bu3VorzUBjjgEGB0eeyPxNU=
 		</data>
 		<key>Headers/RPKAnalyticsEvent.h</key>
 		<data>
-		8w60UM7JnUb8Y4hv3GvYzVHoG9c=
+		i5uylpvuXDv1nNTgqzrYf7TLAVw=
 		</data>
 		<key>Headers/RPKBeacon.h</key>
 		<data>
-		coteViQ1aQr3E1K35mkNtzVoN2c=
+		/TkgH9VaQJGA3MN6JuidSAwL18A=
 		</data>
 		<key>Headers/RPKBeaconRegion.h</key>
 		<data>
-		aZwscSS0eJExrT/wEq4dTqks8X0=
+		h/UNBRc/q4/6G2x0y+3TsnNhYT4=
 		</data>
 		<key>Headers/RPKCircle.h</key>
 		<data>
-		JRG8XDtadv4PNxv5zdVw8u+dX+8=
+		Yx+CW7vR6RLlVv/Yylz/dGgB3AM=
 		</data>
 		<key>Headers/RPKKit.h</key>
 		<data>
-		0G8IIB5SQgqTM4lATJX2vaac8bY=
+		6e6d9Ss3BLDuk9MmNDP6wVFYdpM=
 		</data>
 		<key>Headers/RPKLogger.h</key>
 		<data>
-		t6y3aSxFzrkwGR4pXrKaIeQkutc=
+		B7ysdi0EV9iWKQ8QqFi2q8XF3ho=
 		</data>
 		<key>Headers/RPKManager.h</key>
 		<data>
-		oD6RIFFyjPxTk8+IP0pB+6v4lxA=
+		Lr49EEjjcATVATCKC7hOx/PDa3w=
 		</data>
 		<key>Headers/RPKManagerDelegate.h</key>
 		<data>
-		Url0yvFG1+1djk0qqeV66XewxC4=
+		TmglZOThqjuZkmJ99lhw83xCX2I=
 		</data>
 		<key>Headers/RPKMap.h</key>
 		<data>
-		5ednq7+s/ZGSKjR8eyKsihtowQs=
+		AiQmCdDlHi3TBbwqszT5H2nR9II=
 		</data>
 		<key>Headers/RPKRegion.h</key>
 		<data>
-		2X2ivIPJND4JYH9m/Xnl2BL5mSg=
+		Igcrv+8diJJMiTcyzKcJt/WBdHw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3cPMCDyXT9RsemwaZCxBoqDTTGI=
+		sw53AI2PEiJJnwpFX6yPcgW1xMI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,47 +61,47 @@
 	<dict>
 		<key>Headers/ProximityKit.h</key>
 		<data>
-		gbBMXPYp1KIVEVTxtQmYi+66U6Q=
+		s482bu3VorzUBjjgEGB0eeyPxNU=
 		</data>
 		<key>Headers/RPKAnalyticsEvent.h</key>
 		<data>
-		8w60UM7JnUb8Y4hv3GvYzVHoG9c=
+		i5uylpvuXDv1nNTgqzrYf7TLAVw=
 		</data>
 		<key>Headers/RPKBeacon.h</key>
 		<data>
-		coteViQ1aQr3E1K35mkNtzVoN2c=
+		/TkgH9VaQJGA3MN6JuidSAwL18A=
 		</data>
 		<key>Headers/RPKBeaconRegion.h</key>
 		<data>
-		aZwscSS0eJExrT/wEq4dTqks8X0=
+		h/UNBRc/q4/6G2x0y+3TsnNhYT4=
 		</data>
 		<key>Headers/RPKCircle.h</key>
 		<data>
-		JRG8XDtadv4PNxv5zdVw8u+dX+8=
+		Yx+CW7vR6RLlVv/Yylz/dGgB3AM=
 		</data>
 		<key>Headers/RPKKit.h</key>
 		<data>
-		0G8IIB5SQgqTM4lATJX2vaac8bY=
+		6e6d9Ss3BLDuk9MmNDP6wVFYdpM=
 		</data>
 		<key>Headers/RPKLogger.h</key>
 		<data>
-		t6y3aSxFzrkwGR4pXrKaIeQkutc=
+		B7ysdi0EV9iWKQ8QqFi2q8XF3ho=
 		</data>
 		<key>Headers/RPKManager.h</key>
 		<data>
-		oD6RIFFyjPxTk8+IP0pB+6v4lxA=
+		Lr49EEjjcATVATCKC7hOx/PDa3w=
 		</data>
 		<key>Headers/RPKManagerDelegate.h</key>
 		<data>
-		Url0yvFG1+1djk0qqeV66XewxC4=
+		TmglZOThqjuZkmJ99lhw83xCX2I=
 		</data>
 		<key>Headers/RPKMap.h</key>
 		<data>
-		5ednq7+s/ZGSKjR8eyKsihtowQs=
+		AiQmCdDlHi3TBbwqszT5H2nR9II=
 		</data>
 		<key>Headers/RPKRegion.h</key>
 		<data>
-		2X2ivIPJND4JYH9m/Xnl2BL5mSg=
+		Igcrv+8diJJMiTcyzKcJt/WBdHw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
