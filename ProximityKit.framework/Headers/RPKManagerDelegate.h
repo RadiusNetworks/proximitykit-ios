@@ -20,6 +20,7 @@ typedef NS_ENUM (NSInteger, RPKRegionState) {
 
 @class RPKManager;
 @class RPKRegion;
+@class RPKBeaconRegion;
 
 /*!
    @protocol RPKManagerDelegate
@@ -93,7 +94,7 @@ typedef NS_ENUM (NSInteger, RPKRegionState) {
  */
 - (void)proximityKit:(RPKManager *)manager
      didRangeBeacons:(NSArray *)beacons
-            inRegion:(RPKRegion *)region;
+            inRegion:(RPKBeaconRegion *)region;
 
 /*!
    @method proximityKit:didFailWithError:

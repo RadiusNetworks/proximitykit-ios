@@ -14,6 +14,9 @@
 @property NSString *url;
 @property NSInteger id;
 @property NSString *name;
+@property NSString *statusURL;
+@property NSString *statusToken;
+
 @property NSArray *beaconRegions;
 @property RPKMap *map;
 @property NSDictionary *json;
