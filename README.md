@@ -1,4 +1,4 @@
-[![Proximity Kit by Radius Networks](http://www.radiusnetworks.com/img/github/proximitykit-readme-header.png)](https://proximitykit.radiusnetworks.com)
+[![Proximity Kit by Radius Networks](logo.png)](https://proximitykit.radiusnetworks.com)
 
 The Proximity Kit cloud service and mobile SDK from [Radius
 Networks](http://www.radiusnetworks.com/) enables developers to add geofence
