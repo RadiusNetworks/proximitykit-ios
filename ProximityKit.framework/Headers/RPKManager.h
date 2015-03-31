@@ -225,7 +225,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventTypeKey;
  * Start calculating ranges for iBeacons.
  *
  */
-- (void)startRangingIBeacons;
+- (void)startRangingBeacons;
 
 /** stopRangingIBeacons
  *
