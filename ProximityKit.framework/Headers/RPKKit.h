@@ -20,6 +20,7 @@
 @property NSArray *beaconRegions;
 @property RPKMap *map;
 @property NSDictionary *json;
+@property NSDictionary *config;
 
 - (id)initWith:(NSDictionary *)dict;
 - (RPKRegion *)getRegionForIdentifier:(NSString *)identifier;
