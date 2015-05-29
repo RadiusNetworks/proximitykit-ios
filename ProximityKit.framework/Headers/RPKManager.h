@@ -243,4 +243,17 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventTypeKey;
  */
 - (void)setPartnerIdentifier:(NSString *)identifier;
 
+/** setAirship
+ *
+ * Sets the shared instance of Urban Airship SDK instance.
+ *
+ * Param: `airship` the instance of UAirship manager
+ *
+ * <pre>
+ *   [pkManager setAirship: [UAirship shared]];
+ * </pre>
+ *
+ */
+- (void)setAirship:(/* UAirship */id)airship;
+
 @end

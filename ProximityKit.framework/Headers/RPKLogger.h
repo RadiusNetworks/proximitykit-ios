@@ -26,9 +26,9 @@
   [RPKLogger log : RPKLogLevelDebug format : (s), ## __VA_ARGS__]
 
 /** PKLogLevel
-
-   The enumerated values for the different log levels. Based on syslog.
-
+ *
+ *  The enumerated values for the different log levels. Based on syslog.
+ *
  */
 typedef NS_ENUM (NSInteger, RPKLogLevel)
 {
@@ -76,7 +76,6 @@ typedef NS_ENUM (NSInteger, RPKLogLevel)
  * Print a log message
  *
  * `level` The log level
- *
  * `format` An NSLog-like formatted message
  *
  */
@@ -86,6 +85,7 @@ typedef NS_ENUM (NSInteger, RPKLogLevel)
  *
  * Sets the global log level for proximity kit.
  *
+ * `level` The log level
  */
 + (void)setLevel:(RPKLogLevel)level;
 
