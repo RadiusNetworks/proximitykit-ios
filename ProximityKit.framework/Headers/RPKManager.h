@@ -72,7 +72,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationAnalyticsEventTypeKey;
  * Creates the manager, assignes the delegate.
  *
  */
-+ (RPKManager *)managerWithDelegate:(id <RPKManagerDelegate> )delegate;
++ (RPKManager *)managerWithDelegate:(id <RPKManagerDelegate> )delegate __deprecated_msg("use managerWithDelegate:andConfig instead");
 
 /** managerWithDelegate:andConfig
  *
