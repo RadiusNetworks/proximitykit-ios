@@ -104,4 +104,20 @@ typedef NS_ENUM (NSInteger, RPKRegionState) {
  */
 - (void)proximityKit:(RPKManager *)manager
     didFailWithError:(NSError *)error;
+
+
+/*!
+ @method proximityKit:closestBeaconDidChange:forRegion:
+ 
+ @discussion
+ Invoked when the closest beacon changes.
+ 
+ This will only be invoked when RPKManager is configured with the
+ option monitor_closest_beacon is set to true.
+ */
+- (void)proximityKit:(RPKManager *)manager
+closestBeaconDidChange:(RPKBeacon *)beacon
+           forRegion:(RPKBeaconRegion *)region;
+
+
 @end

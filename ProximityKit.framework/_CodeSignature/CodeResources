@@ -8,6 +8,10 @@
 		<data>
 		s482bu3VorzUBjjgEGB0eeyPxNU=
 		</data>
+		<key>Headers/RPKAccuracyManager.h</key>
+		<data>
+		56NHOrkfyIqtZ2B9Yu8yNhKKq5M=
+		</data>
 		<key>Headers/RPKAnalyticsEvent.h</key>
 		<data>
 		i5uylpvuXDv1nNTgqzrYf7TLAVw=
@@ -34,11 +38,11 @@
 		</data>
 		<key>Headers/RPKManager.h</key>
 		<data>
-		JusoXuqqSN73LqebOAqEXVDo080=
+		MnMrByQ6V8ltCNcbsngBfQXcphs=
 		</data>
 		<key>Headers/RPKManagerDelegate.h</key>
 		<data>
-		t4p9S4hBTW/MaHwMMSN/aCHkIeY=
+		GU6GkqVIHD1Mz0tkS7feTJ4Kk4A=
 		</data>
 		<key>Headers/RPKMap.h</key>
 		<data>
@@ -50,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		65fS92wPiEs8Pn0FWVCmWFXtnBE=
+		dBUlracxYkfvKOKYw236G/p7yX4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,6 +67,10 @@
 		<data>
 		s482bu3VorzUBjjgEGB0eeyPxNU=
 		</data>
+		<key>Headers/RPKAccuracyManager.h</key>
+		<data>
+		56NHOrkfyIqtZ2B9Yu8yNhKKq5M=
+		</data>
 		<key>Headers/RPKAnalyticsEvent.h</key>
 		<data>
 		i5uylpvuXDv1nNTgqzrYf7TLAVw=
@@ -89,11 +97,11 @@
 		</data>
 		<key>Headers/RPKManager.h</key>
 		<data>
-		JusoXuqqSN73LqebOAqEXVDo080=
+		MnMrByQ6V8ltCNcbsngBfQXcphs=
 		</data>
 		<key>Headers/RPKManagerDelegate.h</key>
 		<data>
-		t4p9S4hBTW/MaHwMMSN/aCHkIeY=
+		GU6GkqVIHD1Mz0tkS7feTJ4Kk4A=
 		</data>
 		<key>Headers/RPKMap.h</key>
 		<data>

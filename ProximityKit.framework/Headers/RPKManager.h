@@ -3,6 +3,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
+#import "RPKAccuracyManager.h"
 #import "RPKManagerDelegate.h"
 #import "RPKRegion.h"
 #import "RPKKit.h"
@@ -25,6 +26,7 @@ typedef NS_ENUM (NSInteger, RPKManagerNotificationEvent) {
   RPKManagerNotificationEventDidEnterRegion,
   RPKManagerNotificationEventDidExitRegion,
   RPKManagerNotificationEventDidRangeBeaconsInRegion,
+  RPKManagerNotificationEventClosetBeaconDidChange,
   RPKManagerNotificationEventDidFailWithError
 };
 
@@ -33,6 +35,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerDidDetermineStateForRegionNotificati
 FOUNDATION_EXPORT NSString *const RPKManagerDidEnterRegionNotification;
 FOUNDATION_EXPORT NSString *const RPKManagerDidExitRegionNotification;
 FOUNDATION_EXPORT NSString *const RPKManagerDidRangeBeaconsInRegionNotification;
+FOUNDATION_EXPORT NSString *const RPKManagerClosestBeaconDidChangeNotification;
 FOUNDATION_EXPORT NSString *const RPKManagerDidTriggerAnalyticsEvent;
 FOUNDATION_EXPORT NSString *const RPKManagerDidSyncEvent;
 
@@ -53,7 +56,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  *
  * More information can be found at http://proximitykit.com
  */
-@interface RPKManager : NSObject <CLLocationManagerDelegate>
+@interface RPKManager : NSObject <CLLocationManagerDelegate, RPKAccuracyManagerDelegate>
 
 /** getVersion
  *
@@ -91,6 +94,15 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * configuration dictionary instead of loading the configuration from
  * the plist file.
  *
+ * Configuration Options:
+ *
+ * <pre>
+ * - kit_url: NSString with the PK kit URL
+ * - api_token: PK API Token
+ * - allow_cellular_data: Allow cellular data usage
+ * - monitor_closest_beacon: Provide a callback event when the closest beacon changes
+ * </pre>
+ *
  */
 + (RPKManager *)managerWithConfig:(NSDictionary *)config;
 
@@ -115,7 +127,6 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * </pre>
  */
 - (void)logLevel:(NSInteger)level;
-
 
 /** start
  *
