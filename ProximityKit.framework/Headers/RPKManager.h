@@ -101,6 +101,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * - api_token: PK API Token
  * - allow_cellular_data: Allow cellular data usage
  * - monitor_closest_beacon: Provide a callback event when the closest beacon changes
+ * - averaging_seconds: Time period (in seconds) to average accuracy measurements over (optional)
  * </pre>
  *
  */

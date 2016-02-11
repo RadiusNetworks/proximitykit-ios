@@ -20,6 +20,7 @@
 @interface RPKAccuracyManager : NSObject
 
 @property (nonatomic, assign) id<RPKAccuracyManagerDelegate> delegate;
+@property (nonatomic, assign) NSNumber *measurementExpirationSeconds;
 
 - (void)didRangeBeacons:(NSArray *)pkBeacons inRegion:(RPKBeaconRegion *)region;
 
