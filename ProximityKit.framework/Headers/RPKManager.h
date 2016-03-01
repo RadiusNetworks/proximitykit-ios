@@ -26,7 +26,7 @@ typedef NS_ENUM (NSInteger, RPKManagerNotificationEvent) {
   RPKManagerNotificationEventDidEnterRegion,
   RPKManagerNotificationEventDidExitRegion,
   RPKManagerNotificationEventDidRangeBeaconsInRegion,
-  RPKManagerNotificationEventClosetBeaconDidChange,
+  RPKManagerNotificationEventClosestBeaconDidChange,
   RPKManagerNotificationEventDidFailWithError
 };
 
