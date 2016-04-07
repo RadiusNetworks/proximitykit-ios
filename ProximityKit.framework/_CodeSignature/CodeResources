@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1Zd+h+kNPVv3sbMQ4uitaMsVbgU=
+		YcxHFvFC+dMgVYLjBTXHBdhJjnQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -64,57 +64,148 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/ProximityKit.h</key>
-		<data>
-		s482bu3VorzUBjjgEGB0eeyPxNU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			s482bu3VorzUBjjgEGB0eeyPxNU=
+			</data>
+			<key>hash2</key>
+			<data>
+			zbc7nt32V64YuKTWIaUZDWmfXMmpJMNnisJeiramhOI=
+			</data>
+		</dict>
 		<key>Headers/RPKAccuracyManager.h</key>
-		<data>
-		Ajg04nAfEYRpZd4SFE4sLOyefEI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ajg04nAfEYRpZd4SFE4sLOyefEI=
+			</data>
+			<key>hash2</key>
+			<data>
+			PUNo7Hrg4IFIK0/ckC8p74r6VgbC1xPaRGxtC1YsHoA=
+			</data>
+		</dict>
 		<key>Headers/RPKAnalyticsEvent.h</key>
-		<data>
-		i5uylpvuXDv1nNTgqzrYf7TLAVw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			i5uylpvuXDv1nNTgqzrYf7TLAVw=
+			</data>
+			<key>hash2</key>
+			<data>
+			6AbANxEX553m/9wKpt1f3L0+uitw9QhjAR0uH+HN9OI=
+			</data>
+		</dict>
 		<key>Headers/RPKBeacon.h</key>
-		<data>
-		/TkgH9VaQJGA3MN6JuidSAwL18A=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/TkgH9VaQJGA3MN6JuidSAwL18A=
+			</data>
+			<key>hash2</key>
+			<data>
+			fdMdQ4JNelennLmOW+FHcNAWdH5Vn+URASJ+LcoWOic=
+			</data>
+		</dict>
 		<key>Headers/RPKBeaconRegion.h</key>
-		<data>
-		o+TOuk7DXsEkactik/rBGe4Z/e4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			o+TOuk7DXsEkactik/rBGe4Z/e4=
+			</data>
+			<key>hash2</key>
+			<data>
+			hYHDAd4FLgggEmvZ5n+GCJ7RgzKghsH0526XAZJDCOg=
+			</data>
+		</dict>
 		<key>Headers/RPKCircle.h</key>
-		<data>
-		Yx+CW7vR6RLlVv/Yylz/dGgB3AM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yx+CW7vR6RLlVv/Yylz/dGgB3AM=
+			</data>
+			<key>hash2</key>
+			<data>
+			q+N2V4bGQL1SkU1GF4VccjHdKTJkuJKr/r3kROAovUs=
+			</data>
+		</dict>
 		<key>Headers/RPKKit.h</key>
-		<data>
-		6e6d9Ss3BLDuk9MmNDP6wVFYdpM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			6e6d9Ss3BLDuk9MmNDP6wVFYdpM=
+			</data>
+			<key>hash2</key>
+			<data>
+			QHlN+S/ZTRjMJ4kEdL6dmj+YAmG+J0e8dFLsxmuAvkM=
+			</data>
+		</dict>
 		<key>Headers/RPKLogger.h</key>
-		<data>
-		ev4wqPW0DfvmanEaMkVEru+tC7M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			ev4wqPW0DfvmanEaMkVEru+tC7M=
+			</data>
+			<key>hash2</key>
+			<data>
+			y+zlSFZqRLnqY5rhXQDJXWzadka7go5hdR1d2yVDY70=
+			</data>
+		</dict>
 		<key>Headers/RPKManager.h</key>
-		<data>
-		sCqYL7RnfmOUXMfI9IoHRRCsK0Y=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			sCqYL7RnfmOUXMfI9IoHRRCsK0Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			GeXVTNBdljP2q3NuOA/I8g5v9p78Zom2HQCltBRv8b0=
+			</data>
+		</dict>
 		<key>Headers/RPKManagerDelegate.h</key>
-		<data>
-		GU6GkqVIHD1Mz0tkS7feTJ4Kk4A=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			GU6GkqVIHD1Mz0tkS7feTJ4Kk4A=
+			</data>
+			<key>hash2</key>
+			<data>
+			T83E5LXp9QIhrYFF559TuwkSVfqyQsMVWY4gkc3VO1k=
+			</data>
+		</dict>
 		<key>Headers/RPKMap.h</key>
-		<data>
-		AiQmCdDlHi3TBbwqszT5H2nR9II=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			AiQmCdDlHi3TBbwqszT5H2nR9II=
+			</data>
+			<key>hash2</key>
+			<data>
+			Tou31BptRSOR4oeaYyv6MYytziLPBeVS38Sz+aH/AeU=
+			</data>
+		</dict>
 		<key>Headers/RPKRegion.h</key>
-		<data>
-		Igcrv+8diJJMiTcyzKcJt/WBdHw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Igcrv+8diJJMiTcyzKcJt/WBdHw=
+			</data>
+			<key>hash2</key>
+			<data>
+			j3mJNJrUQpOVjynzoLnursU/LMSnHeXb3M3X+9JYx00=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		QEXKhVpsHZxA8Fb08ZmjBK3rHcc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			QEXKhVpsHZxA8Fb08ZmjBK3rHcc=
+			</data>
+			<key>hash2</key>
+			<data>
+			wYCPvPpm0sRIB4Bf22V5YzUoJuotk65DaUsQobAIfS4=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
