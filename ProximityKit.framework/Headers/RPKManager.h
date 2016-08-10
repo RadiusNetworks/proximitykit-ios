@@ -270,4 +270,23 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  */
 - (void)setAirship:(/* UAirship */id)airship;
 
+/** startAdvertisingWithUUID
+ *
+ * Begins broadcasting as an iBeacon using `uuid`, `major`, and `minor` parameter values.
+ * 
+ * Important note: It is not possible to broadcast as a beacon in the background. When implementing,
+ * you must ensure that the view that is facilitating the broadcasting stays in the foreground.
+ * You might also want to ensure that the device does not go to sleep while that screen is visible.
+ *
+ */
+- (void)startAdvertisingWithUUID:(NSUUID *)uuid major:(NSInteger)major minor:(NSInteger)minor;
+
+/** stopAdvertising
+ *
+ * Stops advertising as an iBeacon
+ *
+ */
+- (void)stopAdvertising;
+
+
 @end
