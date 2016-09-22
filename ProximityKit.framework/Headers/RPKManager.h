@@ -268,7 +268,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * </pre>
  *
  */
-- (void)setAirship:(/* UAirship */id)airship;
+- (void)setAirship:(/* UAirship */id)airship __attribute__((deprecated("Implicit Urban Airship is no longer supported. See tech note for new implementation instructions.")));
 
 /** startAdvertisingWithUUID
  *
