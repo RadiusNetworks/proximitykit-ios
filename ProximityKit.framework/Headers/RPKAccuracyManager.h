@@ -19,7 +19,7 @@
 
 @interface RPKAccuracyManager : NSObject
 
-@property (nonatomic, assign) id<RPKAccuracyManagerDelegate> delegate;
+@property (nonatomic, weak) id<RPKAccuracyManagerDelegate> delegate;
 @property (nonatomic, strong) NSNumber *measurementExpirationSeconds;
 @property (nonatomic, strong) dispatch_queue_t queue;
 

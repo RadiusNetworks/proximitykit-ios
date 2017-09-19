@@ -195,7 +195,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * Primary delegate for the RPKManager.
  *
  */
-@property (assign) id <RPKManagerDelegate> delegate;
+@property (weak, nonatomic) id <RPKManagerDelegate> delegate;
 
 /** locationManager
  *
@@ -215,7 +215,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * and maintains.
  *
  */
-@property (assign) id <CLLocationManagerDelegate> locationManagerDelegate;
+@property (weak, nonatomic) id <CLLocationManagerDelegate> locationManagerDelegate;
 
 /** kit
  *
@@ -268,7 +268,7 @@ FOUNDATION_EXPORT NSString *const RPKManagerNotificationKitKey;
  * </pre>
  *
  */
-- (void)setAirship:(/* UAirship */id)airship;
+- (void)setAirship:(/* UAirship */id)airship __attribute__((deprecated("Implicit Urban Airship is no longer supported. See tech note for new implementation instructions.")));
 
 /** startAdvertisingWithUUID
  *
